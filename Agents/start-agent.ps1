@@ -23,4 +23,15 @@ class Agent {
     {
 
     }
+
+    [void] Restart([guid]$in_id)
+    {
+
+    }
+    
+    [void] GetInfo([guid]$in_id)
+    {
+
+    }
+
 }
