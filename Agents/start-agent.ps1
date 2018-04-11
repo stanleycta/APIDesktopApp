@@ -13,3 +13,14 @@ function Start-Agent([int]$in_id)
         Write-Host("The service is already running.")
     }
 }
+
+class Agent {
+    [guid]$id
+    [string]$name
+    [guid]$tenantId
+
+    [void] Start([guid]$in_id)
+    {
+
+    }
+}
