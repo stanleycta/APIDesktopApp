@@ -1,6 +1,6 @@
 function Restart-Agent([int]$in_id, [string]$in_name)
 {
-    $name = "Scribe Online Agent"+$in_id.ToString()
+    $name = "Online Agent"+$in_id.ToString()
     $agentService = Get-Service -Name $name | Get-Process | Select-Object *
     if(Test-Path $agentService.Path)
     {
